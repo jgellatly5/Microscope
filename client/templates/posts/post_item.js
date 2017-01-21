@@ -8,7 +8,7 @@ Template.postItem.helpers({
     return a.hostname;
   },
   upvotedClass: function() {
-  	var userId = Meteor.userId();l
+  	var userId = Meteor.userId();
   	if (userId && !_.include(this.upvoters, userId)) {
   		return 'btn-primary upvotable';
   	} else {
